@@ -1,0 +1,177 @@
+body{
+    overflow: hidden;
+    margin: 0;
+    background: url('dancefestivalBG.jpg') no-repeat  center center fixed;
+    background-size: 100%, 100%;
+}
+.divBody{
+    display: flex;
+    height: 100vh;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginRegriDiv{
+    display: flex;
+    flex-direction:row ;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: greenyellow;
+    
+}
+.loginMenu{
+    margin-right: 50px ;
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid rgb(19, 33, 80);
+    border-radius: 50px ;
+    width: 15rem;
+    height: 15rem;
+    justify-content:center ;
+    align-items: center;
+    background-color: rgba(51, 92, 154, 0.66);
+}
+.regiMenu{
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid rgb(19, 33, 80);
+    border-radius: 50px ;
+    width: 15rem;
+    height: 20rem;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(66, 108, 171, 0.66);
+    
+}
+.btnInlogRegri{
+    width: 10rem;
+    color: greenyellow;
+    background-color: rgb(34, 112, 176);
+}
+.navbar{
+    background-color: rgb(34, 112, 176);
+    width: 100%;
+    padding: 5px;
+    height: min-content;
+    display: flex;
+}
+
+.navbar input:hover{
+    border: 3px solid rgb(0, 79, 128);
+}
+
+.dropbtn {
+    background-color: #1c2b68;
+    color: white;
+    padding: 18px;
+    font-size: 18px;
+    border: none;
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #059c9a;
+min-width: 180px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: rgb(255, 255, 255);
+padding: 14px 18px;
+display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #2a5558;
+}
+
+.website{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.LineUp{
+    display: flex;
+}
+img{
+    height: 12rem;
+    padding: 5px;
+    width: 95%;
+}
+.artiest{
+    margin-top: 20px;  
+    justify-items: center;
+    width: 15rem;
+    height: 17rem;
+    background-color: #536dd2;
+    margin-left: 30px;
+    border: 3px solid rgb(29, 33, 80);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.contacten{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(0, 79, 128);
+    color: rgb(255, 255, 255);
+    background-color: rgb(34, 112, 176);
+    height: 6rem;
+    width: 15rem;
+}
+
+.kaart{
+    margin-left: 20px ;
+    
+     
+}
+.contactenKaart{
+    justify-content: center;
+    align-items:center;
+    height: 100%;
+    display: flex;
+    
+}
+.nieuwsItems{
+    background-color: rgba(34, 112, 176, 0.5);
+    padding: 1.5rem;
+    border:10px  solid #1c2b68 ;
+    height: min-content;
+    border-radius: 30px;
+    
+    
+}
+.nieuwsItem{
+    background-color: rgba(51, 92, 154, 0.66);
+    height: min-content;
+    width: 50rem;
+    padding: 20px;
+    color: greenyellow;
+    border: 5px solid rgb(19, 33, 80);
+    margin-bottom: 20px;
+    border-radius: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.nieuwsTitel{
+    color: greenyellow;
+    width: max-content;
+    height: min-content;
+}
