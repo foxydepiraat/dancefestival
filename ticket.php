@@ -1,5 +1,11 @@
 <?php
 require('DBfestival.php');
+$query="SELECT * FROM ticket";
+$stm=$conn->prepare($query);
+$stm->execute();
+
+$tickets=$stm->fetchAll(PDO::FETCH_OBJ);
+
 ?>
 <!DOCTYPE html>
     <head>
@@ -7,8 +13,27 @@ require('DBfestival.php');
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <?php
-        require('navbar.php')
-        ?>
+     <?php require('navbar.php'); ?> 
+        <div class="tickets">
+            <?php 
+                
+                foreach($tickets as $ticket){  
+            ?>
+                <div class="ticket">
+                    <?php  
+                        echo $ticket->naam;
+                    ?>
+                     -
+                    <?php
+                        echo "€",$ticket->prijs;
+                    ?>
+
+                    <button class="buy"><a href="ticket.php">BUY</a></button>
+                </div>
+            <?php 
+                }; 
+            ?>
+        </div>
+        
     </body>
     </html>

@@ -3,6 +3,7 @@ body{
     margin: 0;
     background: url('dancefestivalBG.jpg') no-repeat  center center fixed;
     background-size: 100%, 100%;
+    background-position: center;
 }
 .divBody{
     display: flex;
@@ -136,10 +137,11 @@ img{
     background-color: rgb(34, 112, 176);
     height: 6rem;
     width: 15rem;
+    padding: 1rem;
 }
 
 .kaart{
-    margin-left: 20px ;
+    margin-left: 2rem ;
     
      
 }
@@ -174,4 +176,34 @@ img{
     color: greenyellow;
     width: max-content;
     height: min-content;
+}
+.tickets{
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(51, 92, 154, 0.66);
+    border: 5px solid rgb(19, 33, 80);
+    color: greenyellow;
+    border-radius: 1rem;
+
+}
+.ticket{
+    background-color: rgba(66, 108, 171, 0.66);
+    border: 5px solid rgb(19, 33, 80);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.buy{
+    background-color: blue;
+    width: 3rem;
+    height: auto;
+    padding: 3px;
+    border: 2px solid rgb(19, 33, 80);
+}
+
+a{
+    color: greenyellow;
+    text-decoration: none;
+}
+.buy :hover{
+    color: black;
 }
