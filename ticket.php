@@ -14,6 +14,7 @@ $tickets=$stm->fetchAll(PDO::FETCH_OBJ);
     </head>
     <body>
      <?php require('navbar.php'); ?> 
+     <div class="bodyTickets">
         <div class="tickets">
             <?php 
                 
@@ -22,10 +23,10 @@ $tickets=$stm->fetchAll(PDO::FETCH_OBJ);
                 <div class="ticket">
                     <?php  
                         echo $ticket->naam;
-                    ?>
-                     -
-                    <?php
-                        echo "€",$ticket->prijs;
+                    
+                     
+                    
+                        echo " - €",$ticket->prijs;
                     ?>
 
                     <button class="buy"><a href="ticket.php">BUY</a></button>
@@ -33,7 +34,7 @@ $tickets=$stm->fetchAll(PDO::FETCH_OBJ);
             <?php 
                 }; 
             ?>
+            </div>
         </div>
-        
     </body>
     </html>

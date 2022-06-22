@@ -178,12 +178,13 @@ img{
     height: min-content;
 }
 .tickets{
+    display: flex;
     justify-content: center;
-    align-items: center;
     background-color: rgba(51, 92, 154, 0.66);
     border: 5px solid rgb(19, 33, 80);
     color: greenyellow;
     border-radius: 1rem;
+    width: 80%;
 
 }
 .ticket{
@@ -206,4 +207,10 @@ a{
 }
 .buy :hover{
     color: black;
+}
+
+.bodyTicket{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -55,14 +55,6 @@
         <?php
         // account aanmaken van een account en laat hem als eerst checken als hij al bestaat
         if(isset($_POST['btnRegristreren'])){
-            $ophalen="SELECT * FROM gebruiker";
-            $stm=$conn->prepare($ophalen);
-            $stm->execute();
-        
-            $result=$stm->fetchAll(PDO::FETCH_OBJ);
-            
-        foreach($result as $item){
-		if($_POST['txtPassword'] != "$item->wachtwoord" && $_POST['txtEmail'] != "$item->e_mail"){
             $regri="INSERT INTO gebruiker (naam, wachtwoord, e_mail)VALUES(:naam, :wachtwoord, :e_mail)";
             $stm=$conn->prepare($regri);
             $stm->bindParam(":naam",$_POST['txtNaam']);
@@ -70,10 +62,8 @@
             $stm->bindParam(":e_mail",$_POST['txtEmail']);
             if($stm->execute()){
                 echo"je account is aangemaakt";
-            } else echo "er is iets fout gegaan";
+            } else echo "";
         }
-    }
-    }
     ?>
 </form>  
 </div>

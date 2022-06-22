@@ -20,14 +20,13 @@
                 <a href="lineUp.php">LINE-UP</a>
                 <a href="contacten.php">CONTACTEN</a>
 
-                <a href="index.php">UITLOGGEN</a>
-            
-        <?php 
-                echo "E-mail:";
-        ?>
+                <a href="sessionLeeg.php">UITLOGGEN</a>
                 </br>
         <?php
-                echo $_SESSION["email"];
+            if($_SESSION["email"]){
+                echo "";
+            }else echo "E-mail:", $_SESSION["email"];
+                
         ?>
             </div> 
             
