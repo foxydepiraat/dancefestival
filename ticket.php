@@ -29,7 +29,7 @@ $tickets=$stm->fetchAll(PDO::FETCH_OBJ);
                         echo " - €",$ticket->prijs;
                     ?>
 
-                    <button class="buy"><a href="ticket.php">BUY</a></button>
+                    <a href="ticket.php" class="buy">BUY</a>
                 </div>
             <?php 
                 }; 

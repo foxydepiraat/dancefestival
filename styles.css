@@ -184,7 +184,8 @@ img{
     border: 5px solid rgb(19, 33, 80);
     color: greenyellow;
     border-radius: 1rem;
-    width: 80%;
+    width: 90%;
+    height: auto;
 
 }
 .ticket{
@@ -209,7 +210,7 @@ a{
     color: black;
 }
 
-.bodyTicket{
+.bodyTickets{
     display: flex;
     justify-content: center;
     align-items: center;
