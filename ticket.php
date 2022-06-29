@@ -23,13 +23,10 @@ $tickets=$stm->fetchAll(PDO::FETCH_OBJ);
                 <div class="ticket">
                     <?php  
                         echo $ticket->naam;
-                    
-                     
-                    
                         echo " - €",$ticket->prijs;
                     ?>
 
-                    <a href="ticket.php" class="buy">BUY</a>
+                    <?= "<a href='ticketKopen.php?tid=$ticket->tid' class='buy' ,id='ticketA'>BUY</a>"; ?>
                 </div>
             <?php 
                 }; 

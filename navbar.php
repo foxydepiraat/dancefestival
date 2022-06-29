@@ -23,7 +23,7 @@
                 <a href="sessionLeeg.php">UITLOGGEN</a>
                 </br>
         <?php
-            if($_SESSION["email"]){
+            if(empty($_SESSION["email"])){
                 echo "";
             }else echo "E-mail:", $_SESSION["email"];
                 

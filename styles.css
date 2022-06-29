@@ -177,41 +177,95 @@ img{
     width: max-content;
     height: min-content;
 }
-.tickets{
-    display: flex;
-    justify-content: center;
-    background-color: rgba(51, 92, 154, 0.66);
-    border: 5px solid rgb(19, 33, 80);
-    color: greenyellow;
-    border-radius: 1rem;
-    width: 90%;
-    height: auto;
 
+.tickets{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
 }
 .ticket{
+    display: flex;
+    justify-content: space-between;
     background-color: rgba(66, 108, 171, 0.66);
     border: 5px solid rgb(19, 33, 80);
     border-radius: 1rem;
     padding: 1rem;
+    width: 90%;
+    margin: 1%;
+    color: greenyellow;
 }
+
 .buy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: blue;
     width: 3rem;
     height: auto;
     padding: 3px;
     border: 2px solid rgb(19, 33, 80);
+    border-radius: 5px;
 }
 
 a{
     color: greenyellow;
-    text-decoration: none;
+    text-decoration: none;   
 }
-.buy :hover{
+.buy:hover{
+    background-color: lightblue;
+}
+a:hover{
     color: black;
 }
 
 .bodyTickets{
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ticketA{
+    display: flex;
+    justify-self: flex-end; 
+}
+
+.KopenBody{
+    display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    width: auto;
+}
+
+#Select{
+    color: greenyellow;
+    background-color: rgba(10, 37, 64, 0.35);
+    border: 3px solid rgb(19, 33, 80);
+    border-radius:5px ;
+}
+
+.styelBtn{
+    background-color:rgb(0, 79, 128);
+    color: greenyellow;
+    border-radius:5px ;
+    border: 3px solid rgb(19, 33, 80);
+}
+.KoopGegevens{
+    color: greenyellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(51, 92, 154, 0.66);
+    border: 5px solid rgb(19, 33, 80);
+    height: auto;
+    width: auto;
+    padding: 2%;
+}
+
+.styelBtn:hover{
+    background-color: lightblue;
+    color: black;
 }
