@@ -9,7 +9,7 @@
        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-            <!-- line up met foto's en metinformatie van de artiest -->
+            <!-- line up met foto's en de pagina van de artiest -->
              
                 <?php 
                     $query="SELECT * FROM line_up";

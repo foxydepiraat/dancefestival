@@ -23,7 +23,7 @@
         } else echo "er is iets fout gegaan";
         
         $nieuwsitems=$stm->fetchAll(PDO::FETCH_OBJ);
-
+        
         foreach($nieuwsitems as $nieuwsitem){
         ?>
         <div class="nieuwsItem" >

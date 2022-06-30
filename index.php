@@ -19,6 +19,7 @@
                     </br>
                     </br>
                     <input type="submit" name="btninloggen" value="INLOGEN" class="btnInlogRegri"/>
+                    
 
                     <!-- laat het checken als het er over heen komt met de gegevens -->
             <?php
