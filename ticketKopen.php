@@ -39,12 +39,13 @@
                         }
 
                         if(isset($_POST['btnOpslaan'])){
-                            $query =  "INSERT INTO aankoop(datum,aantal,e_mail) values(now(),:aantal,:e_mail)";
+                            $query =  "INSERT INTO aankoop(datum,aantal,e_mail) values(:Datum,:aantal,:e_mail)";
                             $stm= $conn->prepare($query);
                             $stm->bindParam(":aantal",$_POST['aantal']);
                             $stm->bindParam(":e_mail",$Email);
+                            $stm->bindParam(":Datum",$ticket->naam);
                             if($stm->execute()){
-                                echo "<br>","<br>","je ticket(s) zijn bestelt";
+                                echo "<br>","<br>","je ticket(s) zijn bestelt en naar je e-mail gestuurt";
                                 header('refresh: 2 ticket.php');
                             } else echo "er gaat iets fout";
 

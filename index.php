@@ -33,7 +33,7 @@
                         header('location:home.php');
                         $_SESSION["email"]="$item->e_mail";
                         $_SESSION["password"]="$item->wachtwoord";
-                    }
+                    } 
                 }
                         
 
