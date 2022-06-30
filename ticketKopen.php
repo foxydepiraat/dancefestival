@@ -7,6 +7,9 @@
     $stm->execute();
 
     $ticket = $stm->fetch(PDO::FETCH_OBJ);
+    if(empty($_SESSION["email"])){
+        header('location:index.php');
+    }
 ?>
 <!DOCTYPE html>
     <html lang="en">
